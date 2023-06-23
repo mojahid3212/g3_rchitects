@@ -6,6 +6,10 @@ body{
 main, .header-banner {
     margin: 50px 150px 0px 150px;
 }
+.container{
+    display: flex;
+    margin-bottom: 20px;
+}
 /* header section styles */
 header{
     background-color: rgba(255, 144, 14, 0.1);
@@ -79,9 +83,7 @@ text-align: center;
 }
 /* features section styles */
 
-.container{
-    display: flex;
-}
+
 .teams{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -99,7 +101,6 @@ padding-left: 50px;
 }
 .features-title{
     font-size: 45px;
-   
     color: #727272;
 }
 span{
@@ -110,7 +111,65 @@ span{
 }
 .features-details{
     color: var(--dark-03, #727272);
-font-size: 16px; 
-
+    font-size: 16px; 
    
+}
+/* features list styles */
+.features-list-title{
+     color: #131313;
+     font-size: 45px;
+     font-weight: 700;
+     border-left:5px solid #FF900E;
+     padding-left: 20px;
+}
+
+.features-blog{ 
+    border-radius: 8px;
+   background: #FFF;
+   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+   padding: 20px;
+   margin-bottom: 20px;
+}
+.features-blog-title{
+    color: #131313;
+    font-size: 20px;
+}
+.blog-description{
+    color: #727272;
+    font-size: 16px;
+}
+.features-banner, .features-list{
+    width: 50%;
+
+}
+.features-banner{
+    margin-left: 50px;
+}
+
+.features-banner img{
+    height: 100%;
+    width: 100%;
+}
+
+.features-btn{
+    height: 130px;
+    width: 240px;
+    color: #FFFFFF;
+    background-color: rgb(255, 136, 0);
+    border-radius: 5px;
+    border: 0;
+    text-align: center;
+    position: relative;
+    left: -30px;
+    top: -100px;
+}
+.features-banner h2{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.features-banner span{
+    font-size: 20px;
+    color: #FFFFFF;
 }
