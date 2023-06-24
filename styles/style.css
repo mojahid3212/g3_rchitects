@@ -173,3 +173,58 @@ span{
     font-size: 20px;
     color: #FFFFFF;
 }
+/* some facts section styles */
+.some-fact-container{
+    margin-top: 50px;
+}
+.factor{
+    width: 30%;
+}
+.fact-title{
+    font-size: 45px;
+    font-weight: 700;
+}
+.fact-description{
+       font-size: 16px;
+       color: #727272;
+}
+.achievements{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 50px;
+}
+.achievement{
+    height: 200px;
+    width: 200px;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    padding: 10px;
+    text-align: center;
+}
+.achievement-count{
+    font-size: 45px;
+    font-weight: 700;
+}
+.achievement-description{
+    color: #727272;
+    font-size: 16px;
+    font-weight: 600;
+}
+/* add animation  */
+@keyframes sliding {
+    from{
+               transform: scale(1);
+         }
+
+      to{
+        color:darkblue;
+        background-color:lightpink;
+        transform:  scale(1.2);
+      }   
+}
+.achievement:hover{
+    position: relative;
+    animation: sliding 2s ease-in-out 0.1s infinite alternate ;
+   -o-animation-play-state: running;
+}
+/* sponsor section styles */
