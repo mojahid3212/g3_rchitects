@@ -45,10 +45,7 @@ ul li a{
     font-size: 18px;
     text-decoration: none;
 }
-.header-container{
-    width: 900px;
-   
-}
+
 .header-title{
   text-align: center;
 font-weight: 700;
@@ -82,8 +79,6 @@ text-align: center;
     width: 100%;
 }
 /* features section styles */
-
-
 .teams{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -102,6 +97,7 @@ padding-left: 50px;
 .features-title{
     font-size: 45px;
     color: #727272;
+    margin-bottom: 0;
 }
 span{
     color: #131313;
@@ -300,4 +296,41 @@ span{
     background-color: #FFF4E7;
     padding: 30px 20px;
     text-align: center;
+  } 
+   .hide{
+    display: none;
+   }
+  
+  /* add respoonsive styles */
+  @media screen and (max-width:576px) {
+    main,.header-banner{
+        margin: 0;
+        padding: 20px;
+       }
+       .container{
+        flex-direction: column;
+       }
+       nav,nav ul {
+        flex-direction: column;
+       
+        height: 100%;
+       }
+      nav ul{
+         margin: 0;
+       }
+       .features-banner, .features-list{
+        width: 100%;
+    }
+    .features-banner {
+        margin-left: 0;
+    }
+    .features-btn{
+        margin-left: 20px;
+    }   
+       
+  }
+  @media screen and (min-width:576px) {
+     .header-container{
+        width: 900px;
+    }
   }
