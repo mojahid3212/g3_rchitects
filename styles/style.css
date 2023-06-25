@@ -3,7 +3,7 @@ body{
     margin: 0;
     font-family: 'Work Sans', sans-serif;
 }
-main, .header-banner {
+main,footer, .header-banner {
     margin: 50px 150px 0px 150px;
 }
 .container{
@@ -228,3 +228,76 @@ span{
    -o-animation-play-state: running;
 }
 /* sponsor section styles */
+.sponsors{
+    margin-top: 50px;
+}
+.sponsor-details{
+    text-align: center;
+}
+.sponsor-title{
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
+}
+.sponsors-icons{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.sponsors-icon img{
+     height: 50px;
+     width: 150px;
+}
+.grayscale-image {
+    filter: grayscale(100%);
+  }
+  /* about us section */
+  .about-us{
+    background-color: lightcyan;
+    padding: 20px;
+    margin-top: 100px;
+  }
+  .about-us-title{
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .about-us-details{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     gap: 50px;
+  }
+  .about-info-title{
+    color: midnightblue;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+  .about-us-description{
+       color: #727272;
+       font-size: 18px;
+       font-weight: 600;
+  }
+   form{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+   }
+   #name, #email {
+    margin-right: 50px;
+    height: 30px;
+   }
+  form input{
+    margin-left: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  /* footer style */
+  footer{
+    color: #727272;
+    margin-bottom: 400px;
+    background-color: #FFF4E7;
+    padding: 30px 20px;
+    text-align: center;
+  }
