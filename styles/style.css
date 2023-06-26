@@ -292,7 +292,6 @@ span{
   /* footer style */
   footer{
     color: #727272;
-    margin-bottom: 400px;
     background-color: #FFF4E7;
     padding: 30px 20px;
     text-align: center;
@@ -303,11 +302,11 @@ span{
   
   /* add respoonsive styles */
   @media screen and (max-width:576px) {
-    main,.header-banner{
+    main, footer,.header-banner{
         margin: 0;
         padding: 20px;
        }
-       .container{
+       .container,.sponsors-icons{
         flex-direction: column;
        }
        nav,nav ul {
@@ -327,10 +326,35 @@ span{
     .features-btn{
         margin-left: 20px;
     }   
-       
+    /* some fact container */
+    .factor{
+        width: 100%;
+    }
+    .achievements{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .sponsors-icons{
+        align-items: center;
+    }
+    .sponsors-icon{
+        margin-bottom: 20px;
+    }
+    .about-us-details{
+        grid-template-columns: repeat(1,1fr);
+    }
+    form{
+        flex-direction: column;
+    }   
+    form textarea{
+        width: 100%;
+    }
   }
+
+
+  /* computer device */
   @media screen and (min-width:576px) {
      .header-container{
         width: 900px;
     }
+    
   }
